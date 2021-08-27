@@ -5,7 +5,6 @@ let priceWithDiscount = initialPrice;
 let currentCoupon = undefined;
 
 /* Coupons */
-
 const coupons = [
     {name: 'GA20', discount: 20},
     {name: 'UWU50', discount: 50},
@@ -87,7 +86,7 @@ $couponBtnCancel.addEventListener('click', (event) => {
     removeCoupon();
 });
 
-/* copy the codes to clipboard */
+/* apply automatically the coupons */
 $couponCopyList = document.getElementsByClassName('header--coupons-copy');
 window.addEventListener('load', () => {
     Array.from($couponCopyList).forEach(element => {

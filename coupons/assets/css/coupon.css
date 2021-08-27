@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-.coupon {
-}
-
 .coupon__form {
     height: 40px;
     font-size: 0;
