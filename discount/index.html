@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/coupon.css">
+    <title>Discount</title>
+</head>
+<body>
+    <header class="header">
+        <h3 class="header__title">Aplicación: Cupones de Descuento</h3>
+        <div class="header__coupons">
+            Prueba estos cupones
+            <span class="header--coupons-copy">GA20</span>
+            <span class="header--coupons-copy">UWU50</span>
+            <span class="header--coupons-copy">FREE100</span>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="card">
+            <div class="card__header">
+                <img src="./assets/img/thumb-js.png" alt="" class="card__image">
+                <div class="card__preview">
+                    <img src="./assets/img/play-50.png" alt="play">
+                    <p>Previsualizar</p>
+                </div>
+            </div>
+            <div class="card__body">
+                <div class="card__title">Curso Práctico de Javascript</div>
+                <div class="card__subtitle">Instruido por <cite>Coderuwur Team</cite></div>
+                <div class="card__copy">Aprenderás a dar interacción a una página web manipulando el DOM.</div>
+                <div class="card__price price">
+                    <span id="price-discount" class="price__text price__text--large"><!-- 60$ --></span>
+                    <del id="price-real" class="price__text price__text--medium price__text--gray"><!-- 100$ --></del>
+                    <span id="discount" class="price__text price__text--medium"><!-- 40% off --></span>
+                </div>
+            </div>
+            <div class="card__footer">
+                <div class="card__actions">
+                    <button type="button" class="card__btn-buy">Comprar ahora</button>
+                    <div class="coupon">
+                        <div class="coupon__form">
+                            <input type="text" placeholder="Enter Coupon" id="coupon-code" class="coupon__input-code">
+                            <button type="button" id="coupon-btn-apply" class="coupon__btn-apply">Aplicar</button>
+                        </div>
+                        <p id="coupon-error" class="coupon__help coupon__help--error"><!-- cupon no valido --></p>
+                        <div id="coupon-applied-box" class="coupon__applied">
+                            <button id="coupon-btn-cancel" class="coupon__btn-cancel">X</button>
+                            <span class="coupon__name"> <b id="coupon-name"><!-- CODE --></b> está aplicado</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </article>
+    </main>
+        
+    <footer class="footer">    
+        © Coderuwur Team 2021
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

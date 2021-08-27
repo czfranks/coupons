@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+.coupon {
+}
+
+.coupon__form {
+    height: 40px;
+    font-size: 0;
+    border: 1px solid black;
+}
+.coupon__input-code, .coupon__btn-apply {
+    height: 100%;
+    border: 0;
+}
+.coupon__input-code {
+    width: calc(100% - 80px);
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+.coupon__input-code::placeholder {
+    text-transform: none;
+}
+.coupon__input-code:focus {
+    outline: none;
+}
+.coupon__btn-apply {
+    width: 80px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    cursor: pointer;
+}
+.coupon__btn-apply:hover {
+    background-color: black;
+}
+.coupon__help {
+    font-size: 12px;
+}
+.coupon__help--error {
+    color: red;
+}
+.coupon__applied {
+    font-size: 14px;
+    color: blue;
+    
+}
+.coupon__btn-cancel {
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.coupon__btn-cancel:hover {
+    font-weight: bold;
+}
